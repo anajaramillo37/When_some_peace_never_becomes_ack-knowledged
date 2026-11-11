@@ -19,16 +19,16 @@ Through an analysis of 36,975 peace and conflict studies articles (1958-2024), t
 ## Table of Contents
 
 1. [Methodology overview](#overview)
-2. [Installation](#installation)
-3. [Quick Start](#start)
-4. [How to use the library](#how-to)
-5. [Comparison with FA*IR](#fair)
-6. [Bugs and Feedback](#bugs)
+2. [Data labeling](#labeling)
+4. [Human verification](#humans)
+5. [Citation analyses](#citations)
 
 ## Methodology overview<a name=“overview">
 
+Flow chart with the steps to download the most worldwide diverse literature on Open Alex by different languages of publication and regions of the world for peace & conflict literature.
+
 <p align="left">
-  <img src="Methodology_flow_diagram.pdf" alt=“MethodsFlowChart" width="200" style="vertical-align: middle; margin-right: 10px;"/>
+  <img src="Methodology_flow_diagram.png" alt=“MethodsFlowChart" width=“500" style="vertical-align: middle; margin-right: 10px;"/>
 </p>
 
 You can directly install the package using pip:
@@ -45,7 +45,7 @@ cd hyper_fair
 pip install -r requirements.txt
 ```
 
-## Quick Start<a name="start">
+## Quick Start<a name=“labeling">
 
 Get started with a single line: compute the p-value for fairness in your ranking!
 
@@ -66,7 +66,7 @@ print(f"P-value: {pvalue:.3f}")
 
 This tells you how likely it is to observe as few protected candidates in the top $k$ as you did, under random selection. A small p-value (e.g., < 0.05) means the ranking is likely unfair to the protected group.
 
-## How to use the library<a name="how-to">
+## How to use the library<a name="humans">
 
 ### Loading data from a Pandas DataFrame
 
@@ -142,7 +142,7 @@ The function returns the p-value for the fairness test and a `generatedData` obj
 
 For a more detailed guide and practical examples, see [example.ipynb](example.ipynb).
 
-## Comparison with FA*IR<a name="fair">
+## Comparison with FA*IR<a name=“citations">
 
 Finally, in the paper we mention that our method to compute the adjusted parameter for multiple tests is more efficient than the one implemented in [FA*IR](https://arxiv.org/abs/1706.06368) because it doesn't rely on the linear search of the optimal parameter.
 
