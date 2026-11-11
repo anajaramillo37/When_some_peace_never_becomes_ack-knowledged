@@ -26,6 +26,11 @@ Through an analysis of 36,975 peace and conflict studies articles (1958-2024), t
 6. [Bugs and Feedback](#bugs)
 
 ## Methodology overview<a name=“overview">
+
+<p align="left">
+  <img src="Methodology_flow_diagram.pdf" alt=“MethodsFlowChart" width="200" style="vertical-align: middle; margin-right: 10px;"/>
+</p>
+
 You can directly install the package using pip:
 
 ```sh
