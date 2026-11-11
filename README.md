@@ -31,19 +31,7 @@ Flow chart with the steps to download the most worldwide diverse literature on O
   <img src="Methodology_flow_diagram.png" alt=“MethodsFlowChart" width=“500" style="vertical-align: middle; margin-right: 10px;"/>
 </p>
 
-You can directly install the package using pip:
-
-```sh
-pip install hyperfair
-```
-
-Or you can clone the repository and install the dependencies:
-
-```sh
-git clone https://github.com/CSHVienna/hyper_fair.git
-cd hyper_fair
-pip install -r requirements.txt
-```
+An exhaustive list of the files from which each step is taking place is as follows: 1) translated terms peace & conflict is in this table [link] for 86+ lenagues; 2) files derived from the manual search of the translated terms in Open Alex after manual verification of the top results and topic displayed by the platform is downloaded and stored in this folder [link]; 3) Filtering those papers with an abstract and detection of language of each abstract is in this file [link]; translation of the abstracts is carried in this file [file] and the corresponding translation files are in this folder [link]. In this file is the final merge of translated abstracts and this file [link] contains the entire final dataset for continuing the analyses.
 
 ## Quick Start<a name="labeling">
 
