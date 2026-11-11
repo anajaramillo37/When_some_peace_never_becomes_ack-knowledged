@@ -18,14 +18,14 @@ Through an analysis of 36,975 peace and conflict studies articles (1958-2024), t
 
 ## Table of Contents
 
-1. [Features](#features)
+1. [Methodology overview](#overview)
 2. [Installation](#installation)
 3. [Quick Start](#start)
 4. [How to use the library](#how-to)
 5. [Comparison with FA*IR](#fair)
 6. [Bugs and Feedback](#bugs)
 
-
+## Methodology overview<a name=“overview">
 You can directly install the package using pip:
 
 ```sh
