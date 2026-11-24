@@ -60,6 +60,7 @@ To assess the accuracy of our analyses we performed two different human verifica
 The code to generate the random samples and their verification after can be found in this [jupyter notebook](Multilingual_manual_verification_generate_check.ipynb).
 
 ## Citation analysis<a name="citations">
+To reproduce the citation analyses made for the paper please go to this [file](Citation_analyses.ipynb).
 
 
 - **Maintainer:** Ana Maria Jaramillo (jaramillo@csh.ac.at)
