@@ -35,24 +35,7 @@ An exhaustive list of the files from which each step is taking place is as follo
 
 ## Quick Start<a name="labeling">
 
-Get started with a single line: compute the p-value for fairness in your ranking!
-
-Suppose you have a ranking where `1` indicates a protected candidate and `0` an unprotected candidate. To test whether the protected group is under-represented in the top-$k$ positions, simply run:
-
-```python
-from hyperfair.hyperfair import measure_fairness_multiple_points
-
-pvalue, _ = measure_fairness_multiple_points(
-    x_seq=[0, 0, 0, 0, 1, 0, 1, 1, 1, 1],  # 1=protected, 0=unprotected
-    k=10,  # Test the top 10 positions
-    test_side='lower',  # Test for under-representation
-    n_exp=100_000  # Number of Monte Carlo simulations
-)
-print(f"P-value: {pvalue:.3f}")
-# Output: P-value: 0.023
-```
-
-This tells you how likely it is to observe as few protected candidates in the top $k$ as you did, under random selection. A small p-value (e.g., < 0.05) means the ranking is likely unfair to the protected group.
+In this code you can find the labelling process where we: We first searched for the explicit appearance of each of the 30 dictionary terms in each translated abstract and in the ‘primary_topic’ defined by Open Alex. We then applied sentence transformers (Reimers and Gurevych, 2019), a natural language processing methodology that represents sentences as numerical vectors and measures their semantic proximity, to assess whether the conceptual content (its definition provided in the appendix Table A1) of a term was present in the abstract even when the exact word was not. In particular, we used the sentence-transformers model 'all-MiniLM-L6-v2' hosted in hugging-face, which has been previously trained with over a thousand million texts ranging from blogs to scientific academic content. We first removed stop words, numerical content, and then transformed the definitions into a numerical vector. Then, for each translated abstract in English we repeated the text cleaning process and this time we first divided the abstract in sentences strictly delimited by dot (using the sentence tokenization of NTKL), and transformed each sentence to a vector. Then, for the sentences of each abstract, we computed the cosine similarity between i) the numerical vector transformation of the concept definition provided in Table A1 vs ii) the numerical vector transformation of each sentence. The cosine similarity ranges from -1 when there is no similarity to 1 when the two vectors are identical. As an abstract might contain multiple sentences, we selected the sentence with the highest cosine similarity value for our further comparisons. This last decision obeys to the principle that abstracts of scientific papers highlight the main arguments of the entire article, and while other arguments might be explored and shown in the abstract, we filtered by that at least one of the sentences was related to the searched definition. Distributions of the cosine similarity
 
 ## How to use the library<a name="humans">
 
