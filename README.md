@@ -47,9 +47,15 @@ The entire labelling process can be found in this [jupyter notebook](Multilingua
             ``` and selected the maximum value to represent each abstract.
 4. Finally we labelled an article as related with a term if it contained  explicitly in the abstract or the primary topic or if cosine similarity of any sentence of the abstract was larger than 0.65: ```Filtered_DataFrame_out_filt[(Filtered_DataFrame_out_filt['Probability_term_'+concept].apply(lambda x: max(x)>=prob_passing)) | (Filtered_DataFrame_out_filt['Appearance_term_'+concept]=='Yes’)]```
 
-
+You can fine the distribution of the cosine similarity for all terms in the [Cos_sim](Cos_sim) folder.
 
 ## Human verification <a name="humans">
+To assess the accuracy of our analyses we performed two different human verifications:
+1. We selected 5 abstracts for the top 5 languages with the most written abstracts (English, Spanish, Portuguese, Indonesian, and French) that were labelled as containing/related with three out of the 30 terms (Security, Feminist peace, and Decolonial peace), and 5 abstracts in the same language that were not labelled with the term. These terms were selected to have enough detected similar abstracts per language to conduct the analyses in the different paradigms analysed in the manuscript.  A total of 150 abstracts were checked by native speakers with knowledge in peace & conflict literature, 30 abstracts per language.
+
+2. 
+
+The code to generate the random samples and their verification after can be found in this [jupyter notebook](Multilingual_manual_verification_generate_check.ipynb)
 
 ## Citation analysis<a name="citations">
 
