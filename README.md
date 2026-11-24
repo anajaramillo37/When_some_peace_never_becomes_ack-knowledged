@@ -49,7 +49,7 @@ The entire labelling process can be found in this [jupyter notebook](Multilingua
 
 You can fine the distribution of the cosine similarity for all terms in the [Cos_sim](Cos_sim) folder.
 
-In addition you can find the html files of the hierarchies of knowledge from concept, to country used as object of study, and country where the authors are affiliated to in this (folder)[Hierarchy_concept]
+In addition you can find the html files of the hierarchies of knowledge from concept, to country used as object of study, and country where the authors are affiliated to in this [folder](Hierarchy_concept).
 
 ## Human verification <a name="humans">
 To assess the accuracy of our analyses we performed two different human verifications:
@@ -57,7 +57,7 @@ To assess the accuracy of our analyses we performed two different human verifica
 
 3. We selected 20 random abstracts that were labelled as containing/related with each of the 5 polysemous terms that are part of the 30 terms: ’Security’, ‘Development’, ‘Care’, ‘Participation’, and ‘Governance’. And we checked their english in abstract to check that the use of these words was related to the definiton and correctly used under the peace and conflict framework. The excel file with the annotations can be found [here](Polysemous_check.xlsx). We found an average proportion of false positives of 0.33.
 
-The code to generate the random samples and their verification after can be found in this [jupyter notebook].(Multilingual_manual_verification_generate_check.ipynb)
+The code to generate the random samples and their verification after can be found in this [jupyter notebook](Multilingual_manual_verification_generate_check.ipynb).
 
 ## Citation analysis<a name="citations">
 
