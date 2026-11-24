@@ -49,15 +49,18 @@ The entire labelling process can be found in this [jupyter notebook](Multilingua
 
 You can fine the distribution of the cosine similarity for all terms in the [Cos_sim](Cos_sim) folder.
 
+In addition you can find the html files of the hierarchies of knowledge from concept, to country used as object of study, and country where the authors are affiliated to in this (folder)[Hierarchy_concept]
+
 ## Human verification <a name="humans">
 To assess the accuracy of our analyses we performed two different human verifications:
-1. We selected 5 abstracts for the top 5 languages with the most written abstracts (English, Spanish, Portuguese, Indonesian, and French) that were labelled as containing/related with three out of the 30 terms (Security, Feminist peace, and Decolonial peace), and 5 abstracts in the same language that were not labelled with the term. These terms were selected to have enough detected similar abstracts per language to conduct the analyses in the different paradigms analysed in the manuscript.  A total of 150 abstracts were checked by native speakers with knowledge in peace & conflict literature, 30 abstracts per language.
+1. We selected 5 abstracts for the top 5 languages with the most written abstracts (English, Spanish, Portuguese, Indonesian, and French) that were labelled as containing/related with three out of the 30 terms (Security, Feminist peace, and Decolonial peace), and 5 abstracts in the same language that were not labelled with the term. These terms were selected to have enough detected similar abstracts per language to conduct the analyses in the different paradigms analysed in the manuscript.  A total of 150 abstracts were checked by native speakers with knowledge in peace & conflict literature, 30 abstracts per language. The excel file with the annotations can be found [here](Survey for the labeling accuracy.xlsx). Our results indicate an accuracy for 0.7 in average.
 
-2. 
+3. We selected 20 random abstracts that were labelled as containing/related with each of the 5 polysemous terms that are part of the 30 terms: ’Security’, ‘Development’, ‘Care’, ‘Participation’, and ‘Governance’. And we checked their english in abstract to check that the use of these words was related to the definiton and correctly used under the peace and conflict framework. The excel file with the annotations can be found [here](Polysemous_check.xlsx). We found an average proportion of false positives of 0.33.
 
-The code to generate the random samples and their verification after can be found in this [jupyter notebook](Multilingual_manual_verification_generate_check.ipynb)
+The code to generate the random samples and their verification after can be found in this [jupyter notebook].(Multilingual_manual_verification_generate_check.ipynb)
 
 ## Citation analysis<a name="citations">
+
 
 - **Maintainer:** Ana Maria Jaramillo (jaramillo@csh.ac.at)
 - **License:** Apache 2.0
